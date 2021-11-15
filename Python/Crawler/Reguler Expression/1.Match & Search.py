@@ -61,5 +61,3 @@ print(m, m.group())
 m = re.match(s2, '3314')
 print(m)  # None
 print('************************************')
-git config --global user.email "shenxianliang@live.cn"
-git config --global user.name "Kidays"
