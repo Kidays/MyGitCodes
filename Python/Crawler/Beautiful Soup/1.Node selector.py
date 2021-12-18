@@ -37,3 +37,34 @@ print(soup.li.attrs)
 print(soup.li.attrs["value2"])
 print(soup.li["value1"])
 print(soup.a['href'])
+print(soup.head)
+print(type(soup.head))
+head=soup.head
+print(head.title.string)
+print(soup.body.div.ul.li.a['href'])
+print(soup.head.contents)
+print(soup.head.children)
+print(soup.body.div.ul.children)
+print(soup.head.descendants)
+for i,child in enumerate(soup.body.div.ul.contents):
+    print(i,child)
+print('*************************')
+i=1
+for child in soup.body.div.ul.children:
+    print('<',i,'>',child,end=' ')
+    i+=1
+print(soup.a.parent)
+print(soup.a.parent['class'])
+print(soup.a.parents)
+print('************************')
+for parent in soup.a.parents:
+    print('<',parent.name,'>')
+secondli=soup.li.next_sibling.next_sibling
+print("the first li node's next li node",secondli)
+print("the second li node's previous li node",secondli.previous_sibling.previous_sibling['class'])
+for sibling in secondli.next_siblings:
+    print(type(sibling))
+    if str.strip(sibling.string)==" ":
+        print('\n')
+    else:
+        print(sibling)
