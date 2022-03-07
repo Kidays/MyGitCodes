@@ -1,0 +1,60 @@
+\documentclass{article}
+
+%% 开头的设置可以确保中文随便打，并且能支持用LuaLatex编译。lyluatex只能通过LuaLatex来编译
+\usepackage[UTF8]{ctex}
+
+%% 使用lyluatex宏包，用以编译lilypond语句
+\usepackage{lyluatex}
+
+% geometry宏包可以用于灵活调整纸张大小
+\usepackage{geometry}
+\geometry{a4paper, scale=0.65}
+
+%% 因为怕太密集，调整一下行距
+\linespread{2.0}
+
+
+
+%% 正文
+\begin{document}
+\title{使用lyluatex实现谱文混排}
+\author{lilypond 手残粉}
+
+\maketitle
+
+
+搭建好lilypond和latex的设置之后，就可以实现各种方式的打谱。例如：
+
+只需要输入 \textbackslash lilypond\{c' d' e'\},就能实现行中打谱 \lilypond{c' d' e'} 正如你所看到的那样。
+
+大括号里的语法和lilypond里的语法一致。例如，输入\textbackslash lilypond\{  \textbackslash clef bass  \textbackslash omit Staff.TimeSignature
+c' d' e'  \} 就可以看到变成\underline{低音谱号}以及\underline{去掉拍号}后\lilypond{\clef bass \omit Staff.TimeSignature c' d' e'}的打谱效果。
+
+也可以使用\textbackslash begin\{lilypond\} 和 \textbackslash end\{lilypond\} 直接进入lilypond环境，像编辑数学公式一样编辑乐谱。
+
+%% 空了一行
+\vspace*{0.5\baselineskip}
+
+
+%% lilypond 环境
+
+\begin{lilypond}
+    music = \relative {
+        c d e
+    }
+    \score {
+        \new ChoirStaff \with {
+            instrumentName = "2 Fl."
+        } <<
+        \new Staff \transpose c c' \music
+        \new Staff {
+                \clef bass
+                \music
+            }
+        >>
+    }
+\end{lilypond}
+
+这样，既可以利用Latex的编排优势，又可以利用lilypond的打谱优势，lilypond笨拙的文字排版终于可以说拜拜了。
+
+\end{document}

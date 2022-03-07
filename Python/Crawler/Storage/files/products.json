@@ -1,0 +1,12 @@
+[
+    {
+        "name": "iPhone",
+        "price": 9999,
+        "count":3000
+    },
+    {
+        "name": "Tesla",
+        "price": 900000,
+        "count": 122
+    }
+]
