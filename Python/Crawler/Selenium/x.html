@@ -1,0 +1,972 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+<html>
+
+<head>
+    <title>CAS_CAS号查询库【化源网】</title>
+    <meta name="Keywords" content="CAS,CAS号查询,CAS No查询">
+    <meta name="description"
+        content="化源网CAS号查询网站拥有化工行业CAS号数据库, 提供快速CAS号查询，CAS No查询，数百万化合物的专业数据，包括物化, MSDS, 安全信息, 合成路线, 毒性，上下游，期刊文献等。">
+
+    <meta http-equiv="Content-Language" content="zh-CN" />
+    <link rel="alternate" hreflang="zh" href="https://www.chemsrc.com/casindex/" />
+    <link rel="alternate" hreflang="en" href="https://www.chemsrc.com/en/casindex/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.chemsrc.com/en/casindex/" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="applicable-device" content="pc,mobile" />
+    <link rel="canonical" href="https://www.chemsrc.com/casindex/">
+    <link rel="apple-touch-icon" href="/img/120X120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/76X76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/120X120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/152X152.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="referrer" content="always" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link href="/css/messenger.css" rel="stylesheet" type="text/css" />
+    <link href="/css/messenger-theme-future.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+    <link href="/css/chemMain.20220113.min.css" rel="stylesheet" type="text/css" />
+
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-73918344-1', 'chemsrc.com');
+        ga('send', 'pageview');
+
+    </script>
+
+
+</head>
+
+<body>
+
+
+
+    <!-- BEGIN HEADER -->
+
+    <div class="header navbar navbar-reverse navbar-fixed-top" id="topmenu">
+
+        <div class="container">
+            <div class="navbar-header">
+                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                <button class="navbar-toggle btn navbar-btn" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar" style="background-color: #fff"></span>
+                    <span class="icon-bar" style="background-color: #fff"></span>
+                    <span class="icon-bar" style="background-color: #fff"></span>
+                </button>
+                <!-- END RESPONSIVE MENU TOGGLER -->
+                <!-- BEGIN LOGO (you can use logo image instead of text)-->
+                <a class="navbar-brand h_logo" href="https://www.chemsrc.com/">cas号查询</a>
+
+
+                <!-- END LOGO -->
+            </div>
+
+            <!-- BEGIN TOP NAVIGATION MENU -->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navleft">
+
+                    <li><a href="/login.jsp" rel="nofollow"><span class="font-white"></span>登录</a></li>
+                    <li><a href="/register.jsp" rel="nofollow"><span class="font-white"></span>注册</a></li>
+                    <li><a href="/service.jsp" rel="nofollow"><span class="font-orange">VIP</span></a></li>
+
+
+                </ul>
+
+                <ul class="nav navbar-nav pull-right">
+                    <li class="hidden-xs">
+                        <a href="/" rel="nofollow">首页</a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a id="myche" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+                            data-delay="0" data-close-others="false" href="#">
+                            我的化源
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" style="z-index:100;">
+                            <li><a href="/usermodify.jsp" title="个人信息" rel="nofollow">个人信息</a></li>
+                            <li><a href="/MyEnquiry.jsp" title="我的求购信息" rel="nofollow">我的求购</a></li>
+                            <li><a href="/MyProduct.jsp" title="我的供货信息" rel="nofollow"> 我的供货 </a></li>
+
+                        </ul>
+                    </li>
+                    <li class="hidden-xs hidden-sm">
+
+                        <a href="/Request.jsp" rel="nofollow">快速发布求购</a>
+
+                    </li>
+
+                    <li class="hidden-xs hidden-sm hidden-md hidden-lg">
+                        <a href="/ContactUs.jsp" title="联系我们" rel="nofollow">联系我们</a>
+                    </li>
+                    <li>
+                        <a href="//www.chemsrc.com/en/casindex/" rel="nofollow" title="英文版">English</a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <!-- END TOP NAVIGATION MENU -->
+        </div>
+    </div>
+    <!-- END HEADER -->
+
+
+    <!-- begin 头部广告位 -->
+
+    <!-- end -->
+
+    <div class="container">
+        <div class="row" id="headmain" style="margin-top:60px;">
+
+            <div class="col-md-8 col-sm-12 col-md-offset-2" style="padding:0;">
+
+
+                <div class="tabbable" id="tabIndex">
+
+                    <div class="tab-content">
+
+                        <div class="tab-pane active" id="panel-1">
+
+                            <div id="scrollbar" class="">
+                                <div class="input-group">
+
+                                    <input type="text" class="form-control input-lg"
+                                        style="border:solid 2px #195993;border-radius:0px;border-right:none;"
+                                        id="chemSearch" onkeypress="pressSearch(event)"
+                                        placeholder="请输入名称/CAS号/分子式/EINECS/MDL获得MSDS，物化性质等信息。" autocomplete="off">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn input-lg dropdown-toggle search-select"
+                                            style="border:solid 2px #195993;border-left:none;border-radius:0px;background-color:#ffffff;"
+                                            data-toggle="dropdown"><i class="glyphicon glyphicon-list font-blue"></i>
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="/Journal.jsp" rel="nofollow">文献检索</a>
+                                            </li>
+                                            <li>
+                                                <a href="/GroupSearch" rel="nofollow">官能团搜索</a>
+                                            </li>
+                                            <li>
+                                                <a href="/StructureSearch/" rel="nofollow">结构式搜索</a>
+                                            </li>
+
+
+                                        </ul>
+                                    </div><!-- /btn-group -->
+
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-lg btn-primary" style="border-radius:0px" type="button"
+                                            onclick="startSearch();">
+                                            <span class="font-white">搜索</span>
+                                        </button>
+                                    </span>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <br>
+    <div class="container">
+        <div class="row">
+            <ol class="breadcrumb" id="bread">
+            </ol>
+        </div>
+    </div>
+
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/bootstrap/js/bootstrap3-typeahead.min.js"></script>
+    <script src="/js/messenger.min.js"></script>
+    <script src="/js/common.20190310.min.js"></script>
+
+    <script type="text/javascript">
+        var gPath = '';
+        var gEnFlg = false;
+        var gErrPic = 'https://www.chemsrc.com/caspic/default.png';
+
+    </script>
+
+
+
+    <div class="container">
+        <div class="row" id="scrolldiv">
+            <div style="min-width:200px;">
+                <div class="text-center">
+                    <h1 class="h2text font-orange">CAS号查询库</h1>
+                </div>
+                <P>CAS号是公开的化学物质信息的最权威的集合。CAS号涵盖从1957年至今的科学文献中确定的物质，其他物质可追溯到20世纪初。它也称CAS编号(CAS Registry Number，或称CAS
+                    Number，CAS Rn，CAS #)，又称CAS登录号或CAS登记号码，是某种物质(化合物、高分子材料、生物序列(Biological
+                    sequences)、混合物或合金)的唯一的数字识别号码。美国化学会的下设组织化学文摘社(Chemical Abstracts
+                    Service，简称CAS)负责为每一种出现在文献中的物质分配一个CAS编号，其目的是为了避免化学物质有多种名称的麻烦，使数据库的检索更为方便。如今几乎所有的化学数据库都允许用CAS编号检索。</P>
+                <table class="table table-hover table-striped" id="idxTbl">
+                    <thead>
+                        <tr>
+                            <th class="col-md-3">名称</th>
+                            <th class="col-md-3 hidden-xs">英文名</th>
+                            <th style="min-width:138px;" class="hidden-xs">物理化学性质</th>
+                            <th style="min-width:72px;">CAS号</th>
+                            <th style="min-width:72px;" class="hidden-xs">分子式</th>
+                        </tr>
+                    </thead>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/82212-14-4_1.html"
+                                style="color:#337ab7" target="_blank">5-(2-氨基-4-氯-5-苯磺酰胺)-1H-四唑</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            4-Amino-2-chloro-5-(1H-tetrazol-5-yl)benzenesulfonamide</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">分子量：274.688<br>密度：1.8±0.1
+                            g/cm3<br>沸点：633.9±65.0 °C at 760 mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/1.html" target="_blank">82212-14-4</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>7</SUB>H<SUB>7</SUB>ClN<SUB>6</SUB>O<SUB>2</SUB>S</td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/58068-80-7_3.html"
+                                style="color:#337ab7" target="_blank">n-辛酰苯并三唑</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">N-octanoyl benzotriazole</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">分子量：245.320<br>密度：1.1±0.1
+                            g/cm3<br>沸点：379.3±25.0 °C at 760 mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/3.html" target="_blank">58068-80-7</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>14</SUB>H<SUB>19</SUB>N<SUB>3</SUB>O</td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/175202-26-3_4.html"
+                                style="color:#337ab7" target="_blank">3-氯-4-(异丙基磺酰基)噻吩-2-羧酸</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            3-CHLORO-4-(ISOPROPYLSULFONYL)THIOPHENE-2-CARBOXYLIC ACID</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：268.73800<br>密度：N/A<br>沸点：N/A<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/4.html" target="_blank">175202-26-3</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>8</SUB>H<SUB>9</SUB>ClO<SUB>4</SUB>S<SUB>2</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/92878-95-0_6.html"
+                                style="color:#337ab7" target="_blank">2-(3-氯丙氧基)-1-甲氧基-4-硝基苯</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            2-(3-Chloropropoxy)-1-methoxy-4-nitrobenzene</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">分子量：245.660<br>密度：1.3±0.1
+                            g/cm3<br>沸点：388.3±27.0 °C at 760 mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/6.html" target="_blank">92878-95-0</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>10</SUB>H<SUB>12</SUB>ClNO<SUB>4</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/16490-02-1_7.html"
+                                style="color:#337ab7" target="_blank">嘧啶-46-二羧酸</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">4,6-Pyrimidinedicarboxylic acid
+                        </td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">分子量：168.107<br>密度：1.7±0.1
+                            g/cm3<br>沸点：497.4±30.0 °C at 760 mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/7.html" target="_blank">16490-02-1</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>6</SUB>H<SUB>4</SUB>N<SUB>2</SUB>O<SUB>4</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/69099-99-6_8.html"
+                                style="color:#337ab7" target="_blank">6-氨基-5-硝基-2(1h)-嘧啶</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">2(1H)-Pyrimidinone,6-amino-5-nitro-
+                        </td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：156.10000<br>密度：2.02g/cm3<br>沸点：553.4ºC at 760 mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/8.html" target="_blank">69099-99-6</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>4</SUB>H<SUB>4</SUB>N<SUB>4</SUB>O<SUB>3</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/109715-12-0_9.html"
+                                style="color:#337ab7" target="_blank">5-(对甲苯磺酰基)-2,3-O-异丙亚基-2-C-甲基-D-核糖酸-gamma-内酯</a>
+                        </td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            5-(p-Toluenesulfonate)-2,3-O-isopropylidene-2-C-methyl-D-ribonic-gamma-lactone</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：342.36400<br>密度：1.293<br>沸点：N/A<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/9.html" target="_blank">109715-12-0</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>15</SUB>H<SUB>18</SUB>O<SUB>7</SUB>S</td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/704911-47-7_10.html"
+                                style="color:#337ab7" target="_blank">5-溴-1,2,4-三唑-3-甲酸甲酯</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">Methyl
+                            5-bromo-1H-1,2,4-triazole-3-carboxylate</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">分子量：205.997<br>密度：1.902±0.06
+                            g/cm3<br>沸点：352.1±25.0 °C at 760 mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/10.html" target="_blank">704911-47-7</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>4</SUB>H<SUB>4</SUB>BrN<SUB>3</SUB>O<SUB>2</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/77077-83-9_12.html"
+                                style="color:#337ab7" target="_blank">4-甲基-1(2H)-异喹啉酮</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">4-Methyl-2H-isoquinolin-1-one</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：159.18500<br>密度：N/A<br>沸点：N/A<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/12.html" target="_blank">77077-83-9</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>10</SUB>H<SUB>9</SUB>NO</td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/62484-16-6_17.html"
+                                style="color:#337ab7" target="_blank">6-甲基喹唑啉-2,4-二酮</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            6-Methyl-2,4(1H,3H)-quinazolinedione</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">分子量：176.172<br>密度：1.3±0.1
+                            g/cm3<br>沸点：N/A<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/17.html" target="_blank">62484-16-6</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>9</SUB>H<SUB>8</SUB>N<SUB>2</SUB>O<SUB>2</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/848691-22-5_27.html"
+                                style="color:#337ab7" target="_blank">5-氨基噻唑并[4,5-d]嘧啶-2(3H)-酮</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            5-Amino[1,3]thiazolo[4,5-d]pyrimidin-2(3H)-one</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">分子量：168.176<br>密度：1.7±0.1
+                            g/cm3<br>沸点：N/A<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/27.html" target="_blank">848691-22-5</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>5</SUB>H<SUB>4</SUB>N<SUB>4</SUB>OS</td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/13480-95-0_28.html"
+                                style="color:#337ab7" target="_blank">2-乙基硫代-5-甲基-3H-嘧啶-4-酮</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            2-ETHYLTHIO-5-METHYL-3H-PYRIMIDIN-4-ONE</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：170.23200<br>密度：1.25g/cm3<br>沸点：274.4ºC at 760mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/28.html" target="_blank">13480-95-0</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>7</SUB>H<SUB>10</SUB>N<SUB>2</SUB>OS</td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/25957-58-8_29.html"
+                                style="color:#337ab7" target="_blank">2-乙氧基嘧啶-4-醇</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">4-ETHOXY-2-HYDROXYPYRIMIDINE</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：140.14000<br>密度：N/A<br>沸点：N/A<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/29.html" target="_blank">25957-58-8</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>6</SUB>H<SUB>8</SUB>N<SUB>2</SUB>O<SUB>2</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/908128-94-9_32.html"
+                                style="color:#337ab7" target="_blank">5-O-甲基磺酰基-2,3-O-异丙亚基-2-C-甲基-D-核糖酸-gamma-内酯</a>
+                        </td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            5-O-Methanesulfonate-2,3-O-isopropylidene-2-C-methyl-D-ribonic-&gamma;-lactone</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：280.29500<br>密度：1.33<br>沸点：N/A<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/32.html" target="_blank">908128-94-9</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>10</SUB>H<SUB>16</SUB>O<SUB>7</SUB>S</td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/50440-88-5_35.html"
+                                style="color:#337ab7" target="_blank">4-氨基-2-羟基喹唑啉</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">4-Aminoquinazolin-2-ol</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">分子量：161.161<br>密度：1.5±0.1
+                            g/cm3<br>沸点：489.6±37.0 °C at 760 mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/35.html" target="_blank">50440-88-5</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>8</SUB>H<SUB>7</SUB>N<SUB>3</SUB>O</td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/82439-87-0_37.html"
+                                style="color:#337ab7" target="_blank">1-(4-硝基苄基)-4-羟基-1H-咪唑-5-羧酰胺</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            3-(4-Nitrobenzyl)-5-hydroxy-3H-imidazole-4-carboxamide</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：262.22200<br>密度：N/A<br>沸点：N/A<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/37.html" target="_blank">82439-87-0</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>11</SUB>H<SUB>10</SUB>N<SUB>4</SUB>O<SUB>4</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/19693-54-0_42.html"
+                                style="color:#337ab7" target="_blank">6-甲基-1,6-萘啶-5(6h)-酮</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            1,6-Naphthyridin-5(6H)-one,6-methyl-(8CI,9CI)</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">分子量：160.17300<br>密度：1.229
+                            g/cm3<br>沸点：340.609ºC at 760 mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/42.html" target="_blank">19693-54-0</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>9</SUB>H<SUB>8</SUB>N<SUB>2</SUB>O</td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/103626-36-4_49.html"
+                                style="color:#337ab7" target="_blank">9H-嘌呤-6-胺, n-环戊基-</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">9H-Purin-6-amine, N-cyclopentyl-
+                        </td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：203.24400<br>密度：N/A<br>沸点：N/A<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/49.html" target="_blank">103626-36-4</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>10</SUB>H<SUB>13</SUB>N<SUB>5</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/99117-21-2_52.html"
+                                style="color:#337ab7" target="_blank">2-苄基-1,2,3,4-四氢-苯并[b][1,6]萘啶-10-羧酸</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            2-benzyl-1,2,3,4-tetrahydro-benzo[b][1,6]naphthyridine-10-carboxylic acid</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：318.36900<br>密度：1.296g/cm3<br>沸点：504.4ºC at 760mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/52.html" target="_blank">99117-21-2</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>20</SUB>H<SUB>18</SUB>N<SUB>2</SUB>O<SUB>2</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/14731-24-9_53.html"
+                                style="color:#337ab7" target="_blank">5-[(4-氟苯基)氨基]-1,3,4-噻二唑-2-硫醇</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            5-[(4-FLUOROPHENYL)AMINO]-1,3,4-THIADIAZOLE-2-THIOL</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：227.28200<br>密度：1.57g/cm3<br>沸点：316.1ºC at 760mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/53.html" target="_blank">14731-24-9</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>8</SUB>H<SUB>6</SUB>FN<SUB>3</SUB>S<SUB>2</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/18813-87-1_54.html"
+                                style="color:#337ab7" target="_blank">4-(4-乙氧基苯磺酰基)-苯甲酸</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            4-(4-ETHOXY-PHENYLSULFAMOYL)-BENZOIC ACID</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：321.34800<br>密度：1.387g/cm3<br>沸点：522.2ºC at 760mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/54.html" target="_blank">18813-87-1</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>15</SUB>H<SUB>15</SUB>NO<SUB>5</SUB>S</td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/705-02-2_55.html"
+                                style="color:#337ab7" target="_blank">(2-氟苯基)硫代]乙酸</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">(2-FLUORO-BENZYL)-HYDRAZINE</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：186.20300<br>密度：1.36g/cm3<br>沸点：297.6ºC at 760 mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/55.html" target="_blank">705-02-2</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>8</SUB>H<SUB>7</SUB>FO<SUB>2</SUB>S</td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/1028-40-6_56.html"
+                                style="color:#337ab7" target="_blank">3-(4-氯-苯基)-2-硫代-2,3-二氢-1H-喹唑啉-4-酮</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            4(1H)-Quinazolinone,3-(4-chlorophenyl)-2,3-dihydro-2-thioxo-</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：288.75200<br>密度：1.5g/cm3<br>沸点：457.3ºC at 760mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/56.html" target="_blank">1028-40-6</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>14</SUB>H<SUB>9</SUB>ClN<SUB>2</SUB>OS</td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/128277-24-7_57.html"
+                                style="color:#337ab7" target="_blank">4-氯-2-吡啶-3-yl-5,6,7,8-四氢[1]苯并噻吩[2,3-d]嘧啶</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            4-CHLORO-2-PYRIDIN-3-YL-5,6,7,8-TETRAHYDRO[1]BENZOTHIENO[2,3-D]PYRIMIDINE</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：301.79400<br>密度：1.392g/cm3<br>沸点：407.1ºC at 760 mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/57.html" target="_blank">128277-24-7</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>15</SUB>H<SUB>12</SUB>ClN<SUB>3</SUB>S</td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/21417-18-5_59.html"
+                                style="color:#337ab7" target="_blank">2-氯-N-环己基-N-乙基乙酰胺</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            2-CHLORO-N-CYCLOHEX-1-EN-1-YL-N-ETHYLACETAMIDE</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：201.69300<br>密度：1.09g/cm3<br>沸点：320ºC at 760mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/59.html" target="_blank">21417-18-5</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>10</SUB>H<SUB>16</SUB>ClNO</td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/25233-50-5_60.html"
+                                style="color:#337ab7" target="_blank">N-(5-氯-2-甲基苯基)-3-氧代丁酰胺</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            Butanamide,N-(5-chloro-2-methylphenyl)-3-oxo-</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：225.67100<br>密度：1.247g/cm3<br>沸点：386.1ºC at 760mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/60.html" target="_blank">25233-50-5</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>11</SUB>H<SUB>12</SUB>ClNO<SUB>2</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/39971-86-3_68.html"
+                                style="color:#337ab7" target="_blank">3-(2,3-二甲基-1D-吲哚)-1-丙胺</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            3-(2,3-dimethyl-1H-indol-1-yl)propan-1-amine</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：202.29500<br>密度：N/A<br>沸点：362.1ºC at 760mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/68.html" target="_blank">39971-86-3</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>13</SUB>H<SUB>18</SUB>N<SUB>2</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/141068-81-7_73.html"
+                                style="color:#337ab7" target="_blank">7-氨基-4-甲基-1,4-苯并恶嗪-3-酮</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            7-AMINO-4-METHYL-2H-BENZO[B][1,4]OXAZIN-3(4H)-ONE</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：178.18800<br>密度：1.299g/cm3<br>沸点：488.5ºC at 760mmHg<br>熔点：141-143ºC</td>
+                        <td class="v-middle"><a href="/baike/73.html" target="_blank">141068-81-7</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>9</SUB>H<SUB>10</SUB>N<SUB>2</SUB>O<SUB>2</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/102185-28-4_74.html"
+                                style="color:#337ab7" target="_blank">4-氨基苯基磷酰氯</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">4-AMINOPHENYLPHOSPHORYLCHOLINE</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：310.71400<br>密度：N/A<br>沸点：N/A<br>熔点：270-273ºC</td>
+                        <td class="v-middle"><a href="/baike/74.html" target="_blank">102185-28-4</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>11</SUB>H<SUB>20</SUB>ClN<SUB>2</SUB>O<SUB>4</SUB>P</td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/39544-74-6_77.html"
+                                style="color:#337ab7" target="_blank">N-(4-氯苯甲酰)-L-色氨酸</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">benzotript</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：342.77600<br>密度：N/A<br>沸点：643.7ºC at 760 mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/77.html" target="_blank">39544-74-6</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>18</SUB>H<SUB>15</SUB>ClN<SUB>2</SUB>O<SUB>3</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/17264-88-9_78.html"
+                                style="color:#337ab7" target="_blank">3-氯苯甲酸钠</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">SODIUM 3-CHLOROBENZOATE</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：178.54800<br>密度：N/A<br>沸点：281.3ºC at 760 mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/78.html" target="_blank">17264-88-9</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>7</SUB>H<SUB>4</SUB>ClNaO<SUB>2</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/13436-46-9_80.html"
+                                style="color:#337ab7" target="_blank">2-乙氧基四氢呋喃</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">2-ETHOXYTETRAHYDROFURAN</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：116.15800<br>密度：0.94g/cm3<br>沸点：171ºC at 760mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/80.html" target="_blank">13436-46-9</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>6</SUB>H<SUB>12</SUB>O<SUB>2</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/96886-70-3_81.html"
+                                style="color:#337ab7" target="_blank">胆固醇(吡啶-1-基)己酸酯</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">3beta-hydroxy-5-cholestene
+                            3-[6-(1-pyrene)hexanoate]</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：685.03100<br>密度：1.09g/cm3<br>沸点：755ºC at 760mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/81.html" target="_blank">96886-70-3</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>49</SUB>H<SUB>64</SUB>O<SUB>2</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/2568-24-3_82.html"
+                                style="color:#337ab7" target="_blank">4,7-二氢-2-苯基-1,3-二氧杂环庚</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">1,3-Dioxepin, 4,7-dihydro-2-phenyl-
+                        </td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">分子量：176.21200<br>密度：1.11 g/mL at
+                            25ºC(lit.)<br>沸点：114ºC/3.5 mmHg(lit.)<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/82.html" target="_blank">2568-24-3</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>11</SUB>H<SUB>12</SUB>O<SUB>2</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/29584-42-7_83.html"
+                                style="color:#337ab7" target="_blank">三氧化硫N,N-二甲基甲酰胺络合物</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">N,N-dimethylformamide,sulfur
+                            trioxide</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">分子量：153.157<br>密度：N/A<br>沸点：153ºC
+                            at 760 mmHg<br>熔点：155-158ºC(lit.)</td>
+                        <td class="v-middle"><a href="/baike/83.html" target="_blank">29584-42-7</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>3</SUB>H<SUB>7</SUB>NO<SUB>4</SUB>S</td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/82827-44-9_90.html"
+                                style="color:#337ab7" target="_blank">2-(哌啶-4-基甲酰胺)乙酸乙酯</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">ethyl
+                            2-(piperidine-4-carboxamido)acetate hydrochloride</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：214.26200<br>密度：N/A<br>沸点：N/A<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/90.html" target="_blank">82827-44-9</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>10</SUB>H<SUB>18</SUB>N<SUB>2</SUB>O<SUB>3</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/119795-57-2_93.html"
+                                style="color:#337ab7" target="_blank">1-氯-4-(3-丙氧基)苯</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">1-chloro-4-(3-iodopropoxy)benzene
+                        </td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：296.53300<br>密度：1.673g/cm3<br>沸点：317ºC at 760mmHg<br>熔点：31ºC</td>
+                        <td class="v-middle"><a href="/baike/93.html" target="_blank">119795-57-2</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>9</SUB>H<SUB>10</SUB>ClIO</td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/136773-58-5_94.html"
+                                style="color:#337ab7" target="_blank">1-[2-硝基-4-(三氟甲基)苯基]-1H-吡咯</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            1-[2-nitro-4-(trifluoromethyl)phenyl]pyrrole</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：256.18100<br>密度：N/A<br>沸点：N/A<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/94.html" target="_blank">136773-58-5</a></td>
+                        <td class="v-middle hidden-xs">
+                            C<SUB>11</SUB>H<SUB>7</SUB>F<SUB>3</SUB>N<SUB>2</SUB>O<SUB>2</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/175202-68-3_98.html"
+                                style="color:#337ab7" target="_blank">2-(4-溴-3,5-二甲基-1H-吡唑-1-基)乙烷硫代酰胺</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            2-(4-BROMO-3,5-DIMETHYL-1H-PYRAZOL-1-YL)ETHANETHIOAMIDE</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：248.14300<br>密度：N/A<br>沸点：N/A<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/98.html" target="_blank">175202-68-3</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>7</SUB>H<SUB>10</SUB>BrN<SUB>3</SUB>S</td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/1000340-33-9_99.html"
+                                style="color:#337ab7" target="_blank">3,4-二-溴-7-氮杂吲哚</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            3,4-Dibromo-1H-pyrrolo[2,3-b]pyridine</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">分子量：275.928<br>密度：2.2±0.1
+                            g/cm3<br>沸点：N/A<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/99.html" target="_blank">1000340-33-9</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>7</SUB>H<SUB>4</SUB>Br<SUB>2</SUB>N<SUB>2</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/93587-26-9_100.html"
+                                style="color:#337ab7" target="_blank">3,5-二氢-7-硝基-4H-吡咯并[3,2-D]嘧啶-4-酮</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            3,5-DIHYDRO-7-NITRO-4H-PYRROLO[3,2-D]PYRIMIDIN-4-ONE</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：180.12100<br>密度：2.026g/cm3<br>沸点：606.66ºC at 760 mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/100.html" target="_blank">93587-26-9</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>6</SUB>H<SUB>4</SUB>N<SUB>4</SUB>O<SUB>3</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/875781-48-9_101.html"
+                                style="color:#337ab7" target="_blank">3-氨基-6-碘吡嗪-2-甲酸</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">3-amino-6-iodopyrazine-2-carboxylic
+                            acid</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：265.00900<br>密度：2.35g/cm3<br>沸点：455.682ºC at 760 mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/101.html" target="_blank">875781-48-9</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>5</SUB>H<SUB>4</SUB>IN<SUB>3</SUB>O<SUB>2</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/128133-59-5_102.html"
+                                style="color:#337ab7" target="_blank">3-溴-5-异噁唑羧醛</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">1-(Benzyloxy)-3-ethynylbenzene</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">分子量：208.255<br>密度：1.1±0.1
+                            g/cm3<br>沸点：336.6±25.0 °C at 760 mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/102.html" target="_blank">128133-59-5</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>15</SUB>H<SUB>12</SUB>O</td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/83-45-4_103.html"
+                                style="color:#337ab7" target="_blank">&beta;-谷甾烷醇</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">Stigmastanol</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：416.72300<br>密度：0.948g/cm3<br>沸点：471.9ºC at 760 mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/103.html" target="_blank">83-45-4</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>29</SUB>H<SUB>52</SUB>O</td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/564-35-2_104.html"
+                                style="color:#337ab7" target="_blank">11 -酮睾酮</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">11-Oxotestosterone</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">分子量：302.408<br>密度：1.2±0.1
+                            g/cm3<br>沸点：476.8±45.0 °C at 760 mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/104.html" target="_blank">564-35-2</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>19</SUB>H<SUB>26</SUB>O<SUB>3</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/14982-12-8_106.html"
+                                style="color:#337ab7" target="_blank">&beta;-雌二醇 3-(&beta;-D-葡萄糖醛酸苷) 钠盐</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">&beta;-Estradiol
+                            3-(&beta;-D-glucuronide) sodium salt</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：470.488<br>密度：N/A<br>沸点：N/A<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/106.html" target="_blank">14982-12-8</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>24</SUB>H<SUB>31</SUB>NaO<SUB>8</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/10390-14-4_108.html"
+                                style="color:#337ab7" target="_blank">2beta-羟基睾酮</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">2&beta;-Hydroxy Testosterone</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：304.42400<br>密度：1.19g/cm3<br>沸点：476.2ºC at 760 mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/108.html" target="_blank">10390-14-4</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>19</SUB>H<SUB>28</SUB>O<SUB>3</SUB></td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/616-55-7_109.html"
+                                style="color:#337ab7" target="_blank">2,4-二(1,1-二甲乙基)-6-甲酚</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">2,4-Di-tert-butyl-6-methylphenol
+                        </td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">分子量：220.350<br>密度：0.9±0.1
+                            g/cm3<br>沸点：269.0±0.0 °C at 760 mmHg<br>熔点：50-52ºC</td>
+                        <td class="v-middle"><a href="/baike/109.html" target="_blank">616-55-7</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>15</SUB>H<SUB>24</SUB>O</td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/2772-45-4_110.html"
+                                style="color:#337ab7" target="_blank">2,4-二枯基酚</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            2,4-Bis(&alpha;,&alpha;-diMethylbenzyl)phenol</td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">
+                            分子量：330.463<br>密度：1.063<br>沸点：441.1±14.0 °C at 760 mmHg<br>熔点：63-65 °C(lit.)</td>
+                        <td class="v-middle"><a href="/baike/110.html" target="_blank">2772-45-4</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>24</SUB>H<SUB>26</SUB>O</td>
+                    </tr>
+
+                    <tr class="rowDat">
+
+                        <td class="v-middle" style="word-break:break-all;"><a href="/cas/4306-88-1_111.html"
+                                style="color:#337ab7" target="_blank">2,6-二-叔丁基-4-壬苯酚</a></td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">2,6-Di-tert-butyl-4-nonylphenol
+                        </td>
+                        <td class="v-middle hidden-xs" style="word-break:break-all;">分子量：332.56300<br>密度：0.899
+                            g/cm3<br>沸点：389.6ºC at 760 mmHg<br>熔点：N/A</td>
+                        <td class="v-middle"><a href="/baike/111.html" target="_blank">4306-88-1</a></td>
+                        <td class="v-middle hidden-xs">C<SUB>23</SUB>H<SUB>40</SUB>O</td>
+                    </tr>
+
+                </table>
+                <nav>
+                    <div class="pagination pull-right" id="casIdxUl">
+                    </div>
+                </nav>
+            </div>
+            <!--row-->
+        </div>
+    </div>
+
+
+
+
+    <!-- BEGIN FOOTER -->
+    <br>
+
+
+    <!-- BEGIN COPYRIGHT -->
+
+
+
+
+
+
+    <div class="footer navbar-default">
+        <p style="color:#dfdfdf;text-align:center">
+            <a style="color:#dfdfdf" href="/" rel="nofollow">首页</a>&nbsp;|&nbsp;
+            <a style="color:#dfdfdf" href="/Journal.jsp" rel="nofollow">期刊大全</a>&nbsp;|&nbsp;
+            <a style="color:#dfdfdf" href="/MSDSIndex/" rel="nofollow">MSDS查询</a>&nbsp;|&nbsp;
+            <a style="color:#dfdfdf" href="/EnquiryProductAll/" rel="nofollow">求购信息</a>&nbsp;|&nbsp;
+            <a style="color:#dfdfdf" href="/Catalog.html" rel="nofollow">化工产品分类</a>&nbsp;|&nbsp;
+            <a style="color:#dfdfdf" href="/CatalogBio.html" rel="nofollow">生物活性化合物</a>&nbsp;|&nbsp;
+            <a style="color:#dfdfdf" href="/service.jsp" rel="nofollow">会员服务</a>&nbsp;|&nbsp;
+            <a style="color:#dfdfdf" href="/ContactUs.jsp" rel="nofollow">关于我们</a>&nbsp;|&nbsp;
+            <a style="color:#dfdfdf" href="/Statement.jsp" rel="nofollow">免责声明</a><br>
+            Copyright © 2022 ChemSrc All Rights Reserved
+        </p>
+    </div>
+
+
+
+    <!-- END COPYRIGHT -->
+
+    <!-- END FOOTER -->
+    <!-- Modal 对话框 -->
+    <div id="myDialog" class="modal  fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" id="btnClose">×</button>
+                    <h3 id="myModalLabel">退出</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="row offset1">
+                        <div class="col-md-1 col-sm-1" id="dlgIcon"></div>
+                        <div class="col-md-10 col-sm-10" id="dlgData"></div>
+                    </div>
+                    <div class="form-group myhide" id="commentDiv">
+                        <input type="text" class="form-control" id="commentTxt">
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true" id="btn1"></button>
+                    <button class="btn myhide" data-dismiss="modal" aria-hidden="true" id="btn2"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 对话框 -->
+    <div id="dlgLogin" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="LoginDialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" id="logingBtnClose"
+                        onclick="pageJump();">×</button>
+                    <h3>登录</h3>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" method="post" name="login_form" id="login_form" action="">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2 col-md-2" for="guser_name">用户名:</label>
+                            <div class="col-sm-9 col-md-9">
+                                <input class="form-control " type="text" name="guser_name" id="guser_name"
+                                    placeholder="请输入用户名或邮箱">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2 col-md-2" for="gpassword">密&nbsp;码:</label>
+                            <div class="col-sm-9 col-md-9">
+                                <input class="form-control " type="password" name="gpassword" id="gpassword"
+                                    placeholder="请输入密码">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true" id="loginBtn1"
+                        onclick="login();">登录</button>
+                    <button class="btn myhide" data-dismiss="modal" aria-hidden="true" id="loginBtn2"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!--Jquery 是必须的-->
+    <script type="text/javascript">
+	< !--
+	var breadDat = [
+            { "lab": "CAS号查询", "href": "/" },
+            { "lab": "化工产品分类", "href": "/Catalog.html" },
+        ];
+
+        $(function () {
+
+
+            initBread(breadDat);
+
+
+            var curP = 1;
+            var total = 4411;
+            var beginP = parseInt((curP - 1) / 10) * 10 + 1;
+            var endP = beginP + 9;
+            if (endP > total) endP = total;
+            $("#casIdxUl").html(genPageHtml(beginP, endP, curP, total, '', '.html', 0));
+        });
+	//-->
+    </script>
+</body>
+
+</html>
