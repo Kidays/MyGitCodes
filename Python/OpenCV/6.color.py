@@ -6,8 +6,8 @@ def callback():
 
 
 cv2.namedWindow('color', cv2.WINDOW_NORMAL)
-# img = cv2.imread('./lena.jpg')
-img=cv2.imread(r"H:\MyGitCodes\Python\OpenCV\lena.jpg")
+# img = cv2.imread('./lena.jpg') # error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
+img = cv2.imread(r"H:\MyGitCodes\Python\OpenCV\lena.jpg")
 colorspaces = [cv2.COLOR_BGRA2RGBA, cv2.COLOR_BGR2BGRA,
                cv2.COLOR_BGR2GRAY, cv2.COLOR_BGR2YUV, cv2.COLOR_RGB2HSV_FULL]
 cv2.createTrackbar('curcolor', 'color', 0, len(colorspaces), callback)
