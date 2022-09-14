@@ -1,13 +1,14 @@
-from PIL import Image
+# from PIL import Image
 from paddleocr import PaddleOCR
 import sys
 import os
 os.chdir(sys.path[0])
 ocr=PaddleOCR(use_angle_cls=True,lang='en')
-path=r'H:\MyGitCodes\Python\Crawler\Anti-spider\test.png'
+path=r'H:\MyGitCodes\Python\Crawler\Anti-spider\cas.png'
 result=ocr.ocr(path,cls=True)
+# print(result)
 for text in result:
-    print(text)
+    print(text[1][0])
 # result=ocr.ocr(im)
 # print(result)
 # from PIL import Image
