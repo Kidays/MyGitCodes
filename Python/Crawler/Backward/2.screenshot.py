@@ -5,7 +5,6 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 
-
 def get_image(url, pic_name):
     # chromedriver的路径
 
@@ -13,6 +12,8 @@ def get_image(url, pic_name):
     # 一定要使用这个模式，不然截不了全页面，只能截到你电脑的高度
     chrome_options = Options()
     chrome_options.add_argument('headless')
+    chrome_options.add_argument('window-size=1500x1080')  # width ,height
+    chrome_options.add_argument('start-maximized')
     driver = webdriver.Chrome(options=chrome_options)
 # 控制浏览器写入并转到链接
     driver.get(url)
@@ -33,7 +34,7 @@ def get_image(url, pic_name):
 
 
 # 你输入的参数
-for i in range(1,10):
+for i in range(1, 2):
     url = 'https://www.chemsrc.com/casindex/'+str(i)+'.html'
     pic_name = r'.\image'+str(i)+'.png'
     get_image(url, pic_name)
