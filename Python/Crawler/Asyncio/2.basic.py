@@ -12,12 +12,19 @@
 #     # print(detail_url,name)
 #     page_text1=requests.get(url=detail_url,headers=headers).text
 #     print(page_text1)
+
+from selenium.webdriver import Chrome
+from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service
-s = Service("chromedriver.exe")
-driver = webdriver.Chrome(service=s)
-# browser=webdriver.Chrome('C:/Users/Administrator/Downloads/chromedriver_win32/chromedriver')
+options = webdriver.ChromeOptions()
+ 
+# 处理SSL证书错误问题
+options.add_argument('--ignore-certificate-errors')
+options.add_argument('--ignore-ssl-errors')
+# 忽略无用的日志
+options.add_experimental_option("excludeSwitches", ['enable-automation', 'enable-logging'])
+driver = webdriver.Chrome(options=options)
 try:
     driver.get('https://www.pearvideo.com/category_1')
     detail_url=driver.find_element(by=By.XPATH,value='//*[@id="listvideoListUl"]/li')
@@ -25,3 +32,10 @@ try:
 except Exception as e:
     print(e)
     driver.close()
+ 
+
+# from selenium import webdriver
+# from selenium.webdriver.chrome.service import Service
+# s = Service("C:/Users/Administrator/Downloads/chromedriver_win32/chromedriver")
+# driver = webdriver.Chrome(service=s)
+# browser=webdriver.Chrome('C:/Users/Administrator/Downloads/chromedriver_win32/chromedriver')
