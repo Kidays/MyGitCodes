@@ -18,7 +18,7 @@ with open('cas_english.csv','a+',newline='',encoding='utf-8')as f:
     writer.writerows([head_list])
 print(head_list)
 # get contents
-for i in range(100):
+for i in range(301,400):
     s = i+1
     url = 'https://www.chemsrc.com/en/casindex/'+str(s)+'.html'
     driverpath = r'C:\Users\Administrator\Downloads\chromedriver_win32\chromedriver'
@@ -36,7 +36,7 @@ for i in range(100):
     for i in range(int(len(content_list)/len(tab))):
         row_content = []
         row_content = content_list[i*len(tab):(i*len(tab)+len(tab))]
-        print(row_content)
+        # print(row_content)
         with open('cas_english.csv','a+',newline='',encoding='utf-8')as f:
             writer=csv.writer(f)
             writer.writerows([row_content])
@@ -50,4 +50,4 @@ for i in range(100):
     #     properties_list.append(content_properties[i].text)
     # print(properties_list)
 
-    time.sleep(0.5)
+    time.sleep(0.3)
