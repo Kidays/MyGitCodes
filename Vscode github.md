@@ -6,3 +6,5 @@ open VScode
 Build repositories
 commit
 1
+
+## the environment variable sys path sequence is important
