@@ -4,7 +4,7 @@ import sys
 import os
 os.chdir(sys.path[0])
 ocr=PaddleOCR(use_angle_cls=True,lang='en')
-path=r'H:\MyGitCodes\Python\Crawler\Anti-spider\cas.png'
+path=r'H:\MyGitCodes\Python\Crawler\Anti-spider\plate.png'
 result=ocr.ocr(path,cls=True)
 # print(result)
 for text in result:
