@@ -25,7 +25,9 @@ w, h = template.shape[::-1]
 # cv2.TM_CCOEFF ------系数匹配法(最好匹配1)
 # cv2.TM_CCOEFF_NORMED ------化相关系数匹配法(最好匹配1)
 res = cv2.matchTemplate(img_gray, template, cv2.TM_CCOEFF_NORMED)
-
+# The output result from cv2.matchTemplate is a matrix with spatial dimensions:
+# Width: image.shape[1] - template.shape[1] + 1
+# Height: image.shape[0] - template.shape[0] + 1
 # Specify a threshold
 threshold = 0.82
 
